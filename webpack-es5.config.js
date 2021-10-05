@@ -10,12 +10,12 @@ module.exports = {
         loader: "@shopify/swcify/webpack",
         options: {
           jsc: {
-            target: 'es5',
+            target: "es5",
             parser: {
               tsx: true,
               dynamicImport: true,
               syntax: "typescript",
-            }
+            },
           },
         },
         exclude: /node_modules/,
@@ -23,7 +23,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", '.json'],
+    extensions: [".tsx", ".ts", ".js", ".json"],
   },
   output: {
     filename: "es5.js",

@@ -23,7 +23,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", '.json'],
+    extensions: [".tsx", ".ts", ".js", ".json"],
   },
   output: {
     filename: "es6.js",

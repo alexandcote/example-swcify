@@ -1,0 +1,20 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust"
+    },
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "**/.git": true,
+      // "**/node_modules": true,
+      "**/.DS_Store": true,
+      "{build,target,dist,dev}": true,
+      "cache": true,
+      ".{dev,shadowenv.d,loom}": true
+    },
+    "javascript.validate.enable": false,
+    "typescript.tsdk": "./node_modules/typescript/lib"
+  }
+  

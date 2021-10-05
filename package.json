@@ -5,18 +5,21 @@
   "license": "MIT",
   "scripts": {
     "build": "build:es5 && build:es6",
+    "test": "rm -rf cache && jest",
     "build:es5": "webpack --config webpack-es5.config.js",
     "build:es6": "webpack --config webpack-es6.config.js"
   },
   "devDependencies": {
-    "@shopify/swcify": "git+https://git@github.com/Shopify/swcify#online-store-web",
-    "browserslist": "^4.17.2",
+    "@shopify/react-testing": "^3.2.7",
+    "@shopify/swcify": "0.1.13",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.2.4",
+    "regenerator-runtime": "^0.13.9",
     "webpack": "^5.56.0",
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
     "@shopify/react-i18n": "^6.2.3",
-    "loader-utils": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
